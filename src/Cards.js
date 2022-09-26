@@ -59,12 +59,14 @@ console.log(images.length);
 
     <>
     <meta charSet="utf-8" />
+    
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
     <title>Instagram card</title>
-    <div className='header'>
+    <div className='headers'>
+  
 
 {
 
@@ -75,7 +77,7 @@ console.log(images.length);
        
       <div className="header">
         <div className="user">
-          <img className="avatar" src="light.jpg" />
+          <img className="avatar" src="diyajalao.jpeg" />
           <a href="light.jpg" target="_blank">
          Deepotsav 
           </a>

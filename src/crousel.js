@@ -9,14 +9,9 @@ function crousel() {
   >
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img className="d-block w-100" src="deepotsav.jpg" alt="First slide" />
+        <img className="d-block w-100" src="ginger.gif" alt="First slide" />
       </div>
-      <div className="carousel-item">
-        <img className="d-block w-100" src="deep.png" alt="Second slide" />
-      </div>
-      <div className="carousel-item">
-        <img className="d-block w-100" src="mouse.png" alt="Third slide" />
-      </div>
+   
     </div>
     <a
       className="carousel-control-prev"

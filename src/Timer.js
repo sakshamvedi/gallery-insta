@@ -24,7 +24,7 @@ else{
 }
 
   return (
-    <div className='timer'> <marquee> {time-1} Days Remaining 🪔</marquee>
+    <div className='timer'> <marquee> {time-1} Days Left for deepotsav</marquee>
     </div>
   )
 }
