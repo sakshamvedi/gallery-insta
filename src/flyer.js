@@ -15,9 +15,10 @@ if(count == 0)
 {
    return(
        <div className="borderimage">
-           <img onClick={handle} src='https://cdn-icons-png.flaticon.com/512/5773/5773168.png' className='icons'></img>
            <img src='fly1.png' className='img'></img>
+      
        <Timer/>
+       <button  className="btn btn-primary col px-md-5"    onClick={handle}>Continue</button>
        </div>
    )
 }
@@ -25,16 +26,18 @@ if(count==1)
 {
     return(
         <div className='borderimage'>
-            <img  onClick={handle} src='https://cdn-icons-png.flaticon.com/512/5773/5773168.png' className='icons'></img>
+           
             <img src='fly2.png' className='img'></img>
             <Timer/>
+            <button  className="btn btn-primary col px-md-5"    onClick={handle}>Continue</button>
+            
         </div>
     )
 }
 else{
    return(
        <>
-        <Circle />
+    
   <Crousel/>
   <Timer/>
   <Card/>

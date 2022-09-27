@@ -11,7 +11,7 @@ function App() {
   
      
   <div>
-  <Flyer/>
+    <Flyer/>
   </div>
 
     

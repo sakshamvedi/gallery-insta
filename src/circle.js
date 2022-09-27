@@ -1,8 +1,26 @@
 import React from 'react'
 
-function circle() {
-  return (
+
+function Circle() {
+  const [value,newvalue]= React.useState(true);
+  function recent()
+  {
+     if(value == true)
+     {
+       newvalue(false);
+     }
+     else{
+       newvalue(true);
+     }
+  }
+
+
+if(value == true)
+{
+  
+  return (   
     <div className="wrapper">
+      <button onClick={recent}>*</button>
     <div className="left-col">
       <div className="status-wrapper">
         <div className="status-card">
@@ -80,9 +98,16 @@ function circle() {
       </div>
     </div>
   </div>
-  
-
-  )
+  ) 
 }
 
-export default circle
+else{
+  return(
+  <button onClick={recent}>click</button>
+  )
+} 
+
+
+}
+
+export default Circle

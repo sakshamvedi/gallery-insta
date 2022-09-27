@@ -3,19 +3,33 @@ import React from 'react'
 function crousel() {
   return (
     <div
-    id="carouselExampleControls"
+    id="carouselExampleIndicators"
     className="carousel slide"
     data-ride="carousel"
   >
+    <ol className="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to={0}
+        className="active"
+      />
+      <li data-target="#carouselExampleIndicators" data-slide-to={1} />
+      <li data-target="#carouselExampleIndicators" data-slide-to={2} />
+    </ol>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img className="d-block w-100" src="ginger.gif" alt="First slide" />
+        <img className="d-block w-100" src="deep.png" alt="First slide" />
       </div>
-   
+      <div className="carousel-item">
+        <img className="d-block w-100 " src="st1.jpeg" alt="Second slide" />
+      </div>
+      <div className="carousel-item">
+        <img className="d-block w-100" src="st6.jpeg" alt="Third slide" />
+      </div>
     </div>
     <a
       className="carousel-control-prev"
-      href="#carouselExampleControls"
+      href="#carouselExampleIndicators"
       role="button"
       data-slide="prev"
     >
@@ -24,7 +38,7 @@ function crousel() {
     </a>
     <a
       className="carousel-control-next"
-      href="#carouselExampleControls"
+      href="#carouselExampleIndicators"
       role="button"
       data-slide="next"
     >
@@ -32,6 +46,7 @@ function crousel() {
       <span className="sr-only">Next</span>
     </a>
   </div>
+  
   
   )
 }
