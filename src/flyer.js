@@ -9,20 +9,20 @@ function Flyer() {
     const [count,setcount] = React.useState("0");
 function handle()
 {
-    setcount(count+1);
+    setcount(count+2);
 }
-if(count == 0)
+if(count == 7)
 {
    return(
        <div className="borderimage">
-           <img src='fly1.png' className='img'></img>
+           <img src='updated.png' className='img'></img>
       
        <Timer/>
        <button  className="btn btn-primary col px-md-5"    onClick={handle}>Continue</button>
        </div>
    )
 }
-if(count==1)
+if(count==8)
 {
     return(
         <div className='borderimage'>

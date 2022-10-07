@@ -3,38 +3,44 @@ import axios from 'axios'
 import Moment from 'react-moment';
 import Timer from './Timer';
 
+//https://cdn-icons-png.flaticon.com/512/4337/4337071.png   //bhuja
+// https://cdn-icons-png.flaticon.com/512/4337/4337071.png   //jalne
+//https://cdn-icons-png.flaticon.com/512/4337/4337079.png
+
 function Cards() {
     const [heart,noheart] = React.useState("");
-    const [like,dislike] = React.useState("far fa-heart");
-    const[diya,nodiya] = React.useState("https://cdn-icons-png.flaticon.com/512/4336/4336999.png");
+    const [like,dislike] = React.useState("https://cdn-icons-png.flaticon.com/512/126/126473.png");
+    const[diya,nodiya] = React.useState("https://cdn-icons-png.flaticon.com/512/4337/4337071.png ");
     const [count,newcount] = React.useState(Math.floor(Math.random() * 10) + 98);
     function change(event)
     {
        event.preventDefault();
-        if(like === "far fa-heart")
+        if(like === "https://cdn-icons-png.flaticon.com/512/456/456115.png")
         {
-         dislike("");
-         noheart("❤️")
+         dislike("https://cdn-icons-png.flaticon.com/512/126/126473.png");
+         noheart("")
          newcount(count+1);
         }
         else{
-            dislike("far fa-heart");
+            dislike("https://cdn-icons-png.flaticon.com/512/456/456115.png");
             noheart("")
             newcount(count-1);
         }
     
     }
+
+ //   https://cdn-icons-png.flaticon.com/512/3438/3438612.png //bhujha
+
     function xcode(event)
     {
         event.preventDefault();
-        if(diya === "https://cdn-icons-png.flaticon.com/512/4336/4336999.png")
+        if(diya === "https://cdn-icons-png.flaticon.com/512/4337/4337071.png")
         {
-         nodiya("https://cdn-icons-png.flaticon.com/512/3438/3438612.png");
+         nodiya("https://cdn-icons-png.flaticon.com/512/4337/4337079.png");
         }
         else
-        
         {
-            nodiya("https://cdn-icons-png.flaticon.com/512/4336/4336999.png");
+            nodiya("https://cdn-icons-png.flaticon.com/512/4337/4337071.png");
         }
 
     }
@@ -93,11 +99,8 @@ console.log(images.length);
       </div>
       <div className="actions">
         <div className="actions-left">
-          <a className="action-icon icon-left" href="#" onClick={change}>
-            <i className={like} />
-            {heart}     
-            </a>
-          <a className="action-icon icon-left" href="mailto:iet@rmlau.ac.in"><i class="far fa-comment"></i></a>
+        
+            <a className="action-icon icon-left" ><img className='iamge' src = {like} onClick={change} ></img></a>
           <a className="action-icon icon-left" ><img className='iamge' src = {diya} onClick={xcode} ></img></a>
             
     </div>   

@@ -16,15 +16,15 @@ var dd = String(today.getDate()).padStart(2, '0')
     if(dd<=30)
 {
     dd = 30-dd;
-    newtime(dd+21);
+    newtime(dd+23);
 }
 else{
-    newtime(dd-21);
+    newtime(dd-23);
 }
 }
 
   return (
-    <div className='timer'> <marquee> {time-1} Days Left for deepotsav</marquee>
+    <div className='timer'> <marquee> {time-1} Days Left for deepotsav  [23 October 2022 ]</marquee>
     </div>
   )
 }
